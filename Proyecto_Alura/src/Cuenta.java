@@ -7,17 +7,13 @@ class Cuenta {
 	
 	//Constructor
 	private static int total = 0; //No es de la instancia, es de la clase
-	public Cuenta(int agencia) {
+
+	public Cuenta(int agencia, int numero) {
 		
-		if (agencia <= 0) {
-			System.out.println("No se permite un 0");
-			this.agencia = 1;
-		} else {
-			this.agencia = agencia;
-		}
-		total++;
-		System.out.println("Se han creado: " + total);
+		this.agencia = agencia;
+		this.numero = numero;
 		System.out.println("Aqui Se Crea una nueva cuenta");
+		Cuenta.total++;
 	}
 	
 	//Metodos

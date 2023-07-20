@@ -1,4 +1,6 @@
-public class Funcionario {
+//Al ser abstracto no puede ser instancia como tal, porque al ser abstrata es una representacion conceptual...
+//pero no puede ser una representacion fisica del objeto
+public abstract class Funcionario {
 	private String Nombre;
 	private String documento;
 	private double salario;
@@ -34,9 +36,7 @@ public class Funcionario {
 		this.salario = salario;
 	}
 	
-	public double getBonificacion() {
-		return this.salario * 0.05;
-	}
+	public abstract double getBonificacion();
 
 	public int getTipo() {
 		return tipo;

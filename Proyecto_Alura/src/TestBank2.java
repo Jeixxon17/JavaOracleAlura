@@ -3,7 +3,7 @@ public class TestBank2 {
 
 	public static void main(String[] args) {
 		//Elemento mas generioco puede ser adaptado al elemento mas especifico
-		Funcionario funcionario = new Funcionario();
+		/*Funcionario funcionario = new Funcionario();
 		
 		funcionario.setNombre("Jeison");
 		
@@ -23,7 +23,16 @@ public class TestBank2 {
 		bonificacion.registrarSalario(contador);
 		
 		System.out.println();
-		System.out.println();
+		System.out.println(); */
+		
+		CuentaCorriente cc = new CuentaCorriente(1, 1);
+		CuentaAhorros ca = new CuentaAhorros(2, 3);
+		
+		cc.depositar(2000);
+		cc.transfiere(1000, ca);
+		
+		System.out.println(cc.getSaldo());
+		System.out.println(ca.getSaldo());
 	}
 
 }

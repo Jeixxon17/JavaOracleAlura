@@ -22,7 +22,7 @@ public class TestBank {
 		System.out.println(Cuenta.getTotal());
 		System.out.println(cuenta.getAgencia());*/
 		
-		Funcionario funcionario = new Funcionario();
+		Funcionario funcionario = new Contador();
 		//Funcionario gerente = new Funcionario();
 		//gerente.setSalario(6000);
 		//gerente.setTipo(1);
